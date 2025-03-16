@@ -24,9 +24,13 @@
         }
         .twocol{
             display: flex;
+            align-items: flex-start;
         }
-        img {
-            width: 50%;
+        .twocol img,p {
+            align-self: flex-start;
+            max-width: 50%;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
         }
         @media print {
             body {
@@ -38,26 +42,37 @@
 </head>
 <body>
     <h1>Pawpaw Trees in Pittsburgh</h1>
-    <p><strong>Asimina triloba</strong>, or the pawpaw tree, is a native fruit tree once abundant in Pittsburgh’s forests and river valleys. Producing custard-like fruit with a tropical flavor, the pawpaw has been a valuable food source for both wildlife and humans. However, industrialization and urban development have greatly reduced its numbers, leaving isolated patches that struggle to reproduce naturally.</p>
+
+    <div class="twocol">
+        <p><strong>Asimina triloba</strong>, or the pawpaw tree, is a native fruit tree once abundant in Pittsburgh’s forests and river valleys. Producing custard-like fruit with a tropical flavor, the pawpaw has been a valuable food source for both wildlife and humans. However, industrialization and urban development have greatly reduced its numbers, leaving isolated patches that struggle to reproduce naturally.</p>
+        <img src="images/pawpaw.jpg" alt="Pawpaw Tree">
+    </div>
     
     <div class="section">
         <h2>Historical Context</h2>
-        <p>Before European settlement, pawpaw trees thrived in the rich, moist soils of Pittsburgh’s river valleys and lowland forests. Indigenous peoples cultivated and consumed pawpaw fruit, spreading its seeds. However, as Pittsburgh industrialized, much of the native floodplain habitat was lost to steel mills, railroads, and urban sprawl. Pollution from heavy industry further degraded the soil and waterways, limiting the conditions pawpaws need to grow. Today, remnant populations persist but struggle to expand due to habitat fragmentation.</p>
+        <div class="twocol">
+            <img src="images/pollutedPGH.jpg" alt="Polluted Pittsburgh">
+            <p>Before European settlement, pawpaw trees thrived in the rich, moist soils of Pittsburgh’s river valleys and lowland forests. Indigenous peoples cultivated and consumed pawpaw fruit, spreading its seeds. However, as Pittsburgh industrialized, much of the native floodplain habitat was lost to steel mills, railroads, and urban sprawl. Pollution from heavy industry further degraded the soil and waterways, limiting the conditions pawpaws need to grow. Today, remnant populations persist but struggle to expand due to habitat fragmentation.</p>
+        </div>
     </div>
     
     <div class="section">
         <h2>Ecological Role & the Zebra Swallowtail</h2>
-        <p>The pawpaw is the exclusive host plant for the zebra swallowtail butterfly (<i>Eurytides marcellus</i>), meaning its larvae can only feed on pawpaw leaves. Historically, these butterflies were common in Pittsburgh, but as pawpaw groves disappeared, so did the zebra swallowtail. Without connected corridors of pawpaw trees, the butterfly cannot return to the area in significant numbers. Restoring pawpaw populations could reintroduce this striking species to the region.</p>
+        <div class="twocol">
+            <p>The pawpaw is the exclusive host plant for the zebra swallowtail butterfly (<i>Eurytides marcellus</i>), meaning its larvae can only feed on pawpaw leaves. Historically, these butterflies were common in Pittsburgh, but as pawpaw groves disappeared, so did the zebra swallowtail. Without connected corridors of pawpaw trees, the butterfly cannot return to the area in significant numbers. Restoring pawpaw populations could reintroduce this striking species to the region.</p>
+            <img class="img-square" src="images/swallowtail.jpg" alt="Zebra Swallowtail Butterfly">
+        </div>
     </div>
     
     <div class="section">
         <h2>Why Aren’t Pawpaws Spreading?</h2>
-        <p>Unlike many fruiting trees, pawpaws rely on large mammals like bears for seed dispersal. These animals would eat the fruit and deposit seeds elsewhere, aiding natural expansion. However, in urban and suburban areas, the absence of such animals limits the tree’s ability to spread. Pawpaw seeds require specific conditions to germinate: a period of cold stratification followed by warm, moist soil. Without natural seed dispersers, human intervention is necessary to ensure new populations take root.</p>
+        <div class="twocol">
+            <img src="images/Mastodon.jpg">
+            <p>Unlike many fruiting trees, pawpaws rely on large mammals for seed dispersal. These animals would eat the fruit and deposit seeds elsewhere, aiding natural expansion. However, in urban and suburban areas, the absence of such animals limits the tree’s ability to spread. Pawpaw seeds require specific conditions to germinate: a period of cold stratification followed by warm, moist soil. Without natural seed dispersers, human intervention is necessary to ensure new populations take root.</p>
+        </div>
     </div>
     
     <div class="section twocol">
-        <img  src="images/inatProjectQR.png"/>
-
         <div>
             <h2>How to Help</h2>
             <ul>
@@ -67,6 +82,7 @@
                 <li><strong>Document species on iNaturalist:</strong> Help track existing pawpaw populations and butterfly sightings by logging observations on <a href="https://www.inaturalist.org/projects/western-pa-pawpaws" target="_blank">iNaturalist</a>. This data supports conservation efforts and guides planting initiatives.</li>
             </ul>
         </div>
+        <img  src="images/inatProjectQR.png"/>
     </div>
     
 </body>
